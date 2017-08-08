@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Ex17 {
 
     public static void main(String[] args) {
+
         Queue<String> queue = new Queue<>();
 
         Scanner scanner = new Scanner(System.in);
@@ -82,6 +83,7 @@ class Queue<Item> implements Iterable<Item> {
 
     @Override
     public Iterator<Item> iterator() {
+
         return new Iterator<Item>() {
 
             private Node current = first;
